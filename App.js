@@ -1,12 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
+
+
+import RegisterNameScreen from './source/screens/registerNameScreen'
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <RegisterNameScreen />
     );
   }
 }
@@ -14,8 +15,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "rgba(255, 119, 0, 0.4);",
+    alignItems: 'center'
   },
 });
