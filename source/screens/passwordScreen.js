@@ -5,13 +5,14 @@ import Logo from '../components/logo'
 import Input from '../components/input'
 import Title from '../components/title'
 
-class RegisterNameScreen extends React.Component {
+class PasswordScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Logo width='15%'/>
-        <Title text="My e-mail is"/>
-        <Input placeholder="Enter your email"/>
+        <Title text="My password is"/>
+        <Input placeholder="Create Password"/>
+        <Input placeholder="Confirm Password"/>
       </View>
     );
   }
@@ -25,4 +26,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default RegisterNameScreen;
+export default PasswordScreen;

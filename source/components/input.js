@@ -1,11 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
 
-class InputScreen extends React.Component {
+class Input extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TextInput style={styles.input} placeholder="Enter your email" placeholderTextColor='rgba(255, 119, 0, 1);' underlineColorAndroid='transparent'/>
+        <TextInput style={styles.input}
+          underlineColorAndroid='transparent'
+          placeholder={this.props.placeholder}
+          placeholderTextColor='rgba(255, 119, 0, 0.55)' 
+        />
       </View>
     );
   }
@@ -23,6 +27,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     justifyContent:'center',
     alignItems:'center',
+    paddingLeft: 10
 
   },
   inputTitle:{
@@ -31,4 +36,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default InputScreen;
+export default Input;
