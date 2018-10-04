@@ -5,7 +5,7 @@ import Imagem from '../components/imagem';
 import Texts from '../components/texts';
 import Button from '../components/button';
 
-class UsuarioScreen extends Component {
+class Usuario2Screen extends Component {
 
   constructor(props) {
     super(props);
@@ -19,11 +19,9 @@ class UsuarioScreen extends Component {
     return (
       <View style={styles.container}>
           <Imagem />
-          <Texts text={30} value="Let´s create your new account" />
-          <Texts text={30} value="I am a ..."/>
-          <Button marginTop={20} value="Volunteer"/>
-          <Button marginTop={20} value="Organization"/>
-          <Texts text={14} align='center' color='#FFF1E5' value="By clicking Join now, you agree to the M4A User Agreement, Privacy Policy, and Cookie Policy."/>
+          <Texts text={25} value="Let´s create your new account" />
+          <Button marginTop={89} value="Start"/>
+          <Texts marginTop={80} text={14} align='center' color='#FFF1E5' value="By clicking Join now, you agree to the M4A User Agreement, Privacy Policy, and Cookie Policy."/>
       </View>
     );
   }
@@ -38,8 +36,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#FF7700',
     alignItems: 'center',
     flexDirection: 'column',
+    
   },
   
 });
  
-export default UsuarioScreen;
+export default Usuario2Screen;

@@ -4,10 +4,8 @@ import { StyleSheet, View, Image } from 'react-native';
 class Logo extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.littleBar}></View>
-        <View style={[styles.littleBarLoading, styles.littleBarLoading, {width: this.props.width}]}></View>
-        <View style={{alignItems: 'center'}}>
+      <View style={[styles.container,{width:this.props.width} ]}>
+        <View style={{alignItems: 'center', justifyContent:'center'}}>
           <Image source={require('../assets/logo.png')} style={styles.imagem}/>
         </View>
       </View>
@@ -41,6 +39,8 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   imagem:{
+    width:'20%',
+    height: 70,
   },
 });
 

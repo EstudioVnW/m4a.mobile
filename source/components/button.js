@@ -4,8 +4,8 @@ import { StyleSheet, View, Text  } from 'react-native';
 export default class Button extends React.Component{
     render(){
         return(
-            <View style={styles.container}>
-                <Text style={styles.Button}>{this.props.value}</Text>
+            <View style={[styles.container,{backgroundColor:this.props.backgroundColor}, {marginTop:this.props.marginTop},{width:this.props.width} ]}>
+                <Text style={[styles.Button,{color:this.props.color}]}>{this.props.value}</Text>
             </View>
         );
     }
@@ -13,7 +13,7 @@ export default class Button extends React.Component{
 
 const styles = StyleSheet.create({
     container: {  
-        width:'80%',
+        width:'82%',
         height: 60,
         backgroundColor: '#FFF',
         alignItems: 'center',

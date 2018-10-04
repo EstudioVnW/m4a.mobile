@@ -5,7 +5,7 @@ class Title extends React.Component {
   render() {
     return (
       <View>
-        <Text style={styles.title}>{this.props.text}</Text>
+        <Text style={[styles.title,{paddingRight:this.props.paddingRight},{marginBottom:this.props.marginBottom},{marginTop:this.props.marginTop}, {fontSize:this.props.font}]}>{this.props.text}</Text>
       </View>
     );
   }
@@ -13,9 +13,9 @@ class Title extends React.Component {
 
 const styles = StyleSheet.create({
   title:{
-    margin: 50,
     fontSize: 30,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    
   },
 });
 

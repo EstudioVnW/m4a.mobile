@@ -18,20 +18,12 @@ const styles = StyleSheet.create({
         height: 200,
         backgroundColor: '#FFF',
         alignItems: 'center',
-
-
         borderBottomRightRadius: 200,
         borderBottomLeftRadius: 300,
-
-        // borderRightWidth: 2, 
-        // borderLeftWidth: 5, 
-
-        //borderBottomColor: 'transparent',
-        // borderLeftColor: 'transparent',
       },
     logo:{
-        width: '40%',
-        height: 150,
+        width: '50%',
+        height: 160,
         alignItems:'center',
       },
 

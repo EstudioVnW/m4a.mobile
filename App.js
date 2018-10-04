@@ -4,11 +4,17 @@ import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
 
 import RegisterScreen from './source/screens/registerScreen'
 import UsuarioScreen from './source/screens/usuarioScreen'
+import Usuario2Screen from './source/screens/usuario2Screen'
+import AcaoSocialscreen from './source/screens/acaoSocialscreen'
+
 
 export default class App extends React.Component {
   render() {
     return (
-      <RegisterScreen />
+      // <RegisterScreen />
+      <AcaoSocialscreen/>
+      //<Usuario2Screen/>
+      //<UsuarioScreen/>
     );
   }
 }

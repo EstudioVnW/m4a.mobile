@@ -5,7 +5,7 @@ export default class TextCreat extends React.Component{
     render(){
         return(
             <View style={styles.container}>
-                <Text style={[styles.TextCreat, {fontSize:this.props.text}, {marginBottom:this.props.margin}]}>{this.props.value}</Text>
+                <Text style={[styles.TextCreat,{textAlign:this.props.align}, {color:this.props.color},{fontSize:this.props.text}, {marginTop:this.props.marginTop}]}>{this.props.value}</Text>
             </View> 
         );
     }
@@ -13,8 +13,9 @@ export default class TextCreat extends React.Component{
 
 const styles = StyleSheet.create({
     container: {  
-        width:'80%',
+        width:'82%',
         backgroundColor: '#FF7700',
         marginTop: 15,
+        
     },
 })
