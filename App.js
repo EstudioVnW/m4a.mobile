@@ -2,13 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
 
 
-import RegisterNameScreen from './source/screens/registerNameScreen'
+import RegisterScreen from './source/screens/registerScreen'
 import PasswordScreen from './source/screens/passwordScreen'
 
 export default class App extends React.Component {
   render() {
     return (
-      <RegisterNameScreen />
+      <RegisterScreen />
     );
   }
 }
