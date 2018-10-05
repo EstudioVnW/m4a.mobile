@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import {StyleSheet, View, Text, FlatList, Image} from 'react-native';
+				
 
-import ImagemPerfil from '../assets/iconePerfil.png'
+import CircuitoMais from '../assets/CircuitoMais.png';
+import ChangeMakers from '../assets/ChangeMakers.png';
+import Poetas from '../assets/poetas.png';
+// import ChangeMakers from '../assets/ChangeMakers.png';
 
 class MatchesOng extends Component {
 
@@ -9,11 +13,11 @@ class MatchesOng extends Component {
 		super(props);
 		this.state = {
 			ong :[
-				{photo: 'oi' , name: 'Circuito Mais'},
-				{photo: 'oi', name: 'ChangeMakers'},
-				{photo: 'oi', name: 'ChangeMakers'},
-				{photo: 'oi', name: 'Vai na Web'},
-				{photo: 'oi', name: 'LGBTI Pride'}
+				{photo: 'CircuitoMais' , name: 'Circuito Mais'},
+				{photo: 'ChangeMakers', name: 'ChangeMakers'},
+				{photo: 'ChangeMakers', name: 'ChangeMakers'},
+				{photo: 'CircuitoMais', name: 'Vai na Web'},
+				{photo: 'Poetas', name: 'LGBTI Pride'}
 			]
 		}
 	}
@@ -79,3 +83,9 @@ const styles = StyleSheet.create({
 });
 
 export default MatchesOng;
+
+
+// <Image 
+//     style={styles.image}
+//     source={CircuitoMais} 
+// />
