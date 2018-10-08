@@ -17,7 +17,7 @@ class RegisterScreen extends React.Component {
   render() {
     return (
         <View style={styles.container}>
-            <Logo width='15%'/>
+            <Logo width='100%'/>
             <Input text="Name" />
             <Input text="Email" />
             <Input text="Password" />

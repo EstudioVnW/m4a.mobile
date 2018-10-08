@@ -11,7 +11,7 @@ import AcaoSocialscreen from './source/screens/acaoSocialscreen'
 export default class App extends React.Component {
   render() {
     return (
-      // <RegisterScreen />
+      //<RegisterScreen />
       <AcaoSocialscreen/>
       //<Usuario2Screen/>
       //<UsuarioScreen/>

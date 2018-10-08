@@ -20,7 +20,7 @@ class Usuario2Screen extends Component {
       <View style={styles.container}>
           <Imagem />
           <Texts text={25} value="Let´s create your new account" />
-          <Button marginTop={89} value="Start"/>
+          <Button marginTop={89} value='Start' backgroundColor='#FFF' width='82%'/>
           <Texts marginTop={80} text={14} align='center' color='#FFF1E5' value="By clicking Join now, you agree to the M4A User Agreement, Privacy Policy, and Cookie Policy."/>
       </View>
     );

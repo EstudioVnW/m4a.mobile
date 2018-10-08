@@ -4,7 +4,7 @@ import { StyleSheet, View, Image } from 'react-native';
 class Logo extends Component {
   render() {
     return (
-      <View style={[styles.container,{width:this.props.width} ]}>
+      <View style={[styles.container,{width:this.props.width},{height:this.props.height} ]}>
         <View style={{alignItems: 'center', justifyContent:'center'}}>
           <Image source={require('../assets/logo.png')} style={styles.imagem}/>
         </View>
