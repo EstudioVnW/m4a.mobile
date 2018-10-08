@@ -13,28 +13,35 @@ class TopSwipe extends Component {
 
 	render() {
 		return(
-			<View style={styles.imagens}>
+			<View style={styles.container}>
 				<Image source={require('../assets/iconePerfil.png')} />
 				<Image source={require('../assets/Logotipo-Match4Action.png')} style={styles.imageM4A}/>
-				<Image source={require('../assets/icone-chat.png')} />				
+				<Image source={require('../assets/icone-chat.png')} style={styles.imageMsg}/>				
 			</View>
 		)
 	}
 } 
 const styles = StyleSheet.create({
-  imagens:{
-    height:  '5%',
+  container:{
+    height: '7%',
     width: '100%', 
     marginTop: 20,
     padding: 30,
   	flexDirection: 'row',
   	justifyContent: 'space-around',
-  	alignItems: 'center'
+  	alignItems: 'center',
+  	borderBottomWidth:1,
+  	borderColor: 'rgba(0, 129, 195, 0.19);'
   },
   imageM4A:{
   	width: '100%',
   	height: 30,
   	resizeMode: 'contain'
+  },
+  imageMsg:{
+    width: '10%',
+    
+    resizeMode: 'contain'
   }
 });
 

@@ -7,11 +7,12 @@ import PasswordScreen from './source/screens/passwordScreen';
 import MessageScreen from './source/screens/messageScreen';
 import MatchesScreen from './source/screens/matchesScreen';
 import SwipeScreen from './source/screens/swipeScreen';
+import TutorialScreen from './source/screens/tutorialScreen';
 
 export default class App extends React.Component {
   render() {
     return (
-      <SwipeScreen />
+      <TutorialScreen />
     );
   }
 }

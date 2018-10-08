@@ -15,65 +15,123 @@ class FooterSwipe extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			
 		}
 	}
 
 	render() {
 		return(
-      <View  style={styles.footerrr}>
-       <Image source={PhotoOval} />
-      <View style={styles.footer}>
-       <TouchableOpacity style={styles.fieldFooter}>
-          <Image style={styles.footerPhoto} source={PhotoXis} />
-        </TouchableOpacity>
-        <TouchableOpacity style={[styles.fieldFooter, styles.fieldFooterShare]}>
-          <Image style={styles.footerPhoto} source={PhotoShare} />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.fieldFooter}>
-          <Image style={styles.footerPhoto} source={PhotoHeart} />
-        </TouchableOpacity>
-      </View>
+      <View style={styles.container}>
+        <View style={styles.containerImageOval}>
+        <Image source={PhotoOval} />
+        </View>
+       <View  style={styles.fieldFooterGO}>
+         <TouchableOpacity style={[styles.footerImage , styles.fieldSpecification]}>
+          <Text style={styles.buttonGo}>Go it!</Text>
+         </TouchableOpacity>
+       </View>
+        <View style={styles.footerContainer}>
+          <View style={styles.fieldFooterButton}>
+            <View style={styles.footerContainer}>
+              <TouchableOpacity style={styles.footerImage}>
+                <Image source={PhotoXis} />
+              </TouchableOpacity>
+              <Text style={styles.footerText}>skip</Text>
+            </View>
+            <View style={styles.footerContainer}>
+              <TouchableOpacity style={[styles.footerImage, styles.fieldFooterShare]}>
+                <Image source={PhotoShare} />
+              </TouchableOpacity>
+              <Text style={[styles.footerText,styles.footerTextShare]}>share</Text>
+            </View>
+            <View style={styles.footerContainer}>
+              <TouchableOpacity style={styles.footerImage}>
+                <Image source={PhotoHeart} />
+              </TouchableOpacity>
+              <Text style={styles.footerText}>volunteer</Text>
+            </View>
+          </View>
+        </View>
       </View>
 		)
 	}
 } 
 const styles = StyleSheet.create({
-  footerrr:{
+  container:{
+    position: 'absolute',
+    bottom: 0,
+    width:'100%',
+  },
+  containerImageOval:{
     position: 'absolute',
     bottom: 0,
   },
-  footer:{
-    flexDirection:'row',
+  footerContainer:{
     justifyContent: 'center',
-    alignItems: 'center',
-    margin: 20,
-    position: 'absolute',
-    bottom: 1,
+    alignItems:'center',
   },
-  fieldFooter:{
-  	flexDirection: 'row',
+  fieldFooterButton:{
+    padding: 10,
+    flexDirection:'row',
+  },
+  footerImage:{
+    margin: 10,
+    width: 60,
+    height: 60,
   	backgroundColor: '#0081C3',
-  	borderRadius: 50,
-  	width: 60,
-  	height: 60,
-  	justifyContent: 'space-around',
-  	alignItems:'center',
-  	margin: 10,
-    marginLeft: 30
+    borderRadius: 50,
+    justifyContent: 'center',
+    alignItems:'center',
   },
   fieldFooterShare:{
     width: 48,
     height: 48,
   },
-  fieldFooterText:{
-    flexDirection:'row',
-    justifyContent: 'space-evenly',
-    alignItems:'center',
-  },
   footerText:{
-    color: '#0081C3'
+    color: '#0081C3',
+    fontSize: 10
+  },
+  footerTextShare:{
+    paddingTop: 12
+  },
+  fieldFooterGO:{
+    display: '' ? '' : 'none',
+    top: 80,
+    alignItems: 'center',
+  },
+  fieldSpecification:{
+    width: 80,
+    height: 80
+  },
+  buttonGo:{
+    color: '#FFF',
+    fontSize: 15,
   }
 });
 
 export default FooterSwipe;
+
+
+
+
+ // <View style={styles.footerContainer}>
+ //        <View style={styles.fieldFooterButton}>
+ //          <View style={styles.footerContainer}>
+ //            <TouchableOpacity style={styles.footerImage}>
+ //              <Image source={PhotoXis} />
+ //            </TouchableOpacity>
+ //            <Text style={styles.footerText}>skip</Text>
+ //          </View>
+ //          <View style={styles.footerContainer}>
+ //            <TouchableOpacity style={[styles.footerImage, styles.fieldFooterShare]}>
+ //              <Image source={PhotoShare} />
+ //            </TouchableOpacity>
+ //            <Text style={[styles.footerText,styles.footerTextShare]}>share</Text>
+ //          </View>
+ //          <View style={styles.footerContainer}>
+ //            <TouchableOpacity style={styles.footerImage}>
+ //              <Image source={PhotoHeart} />
+ //            </TouchableOpacity>
+ //            <Text style={styles.footerText}>volunteer</Text>
+ //          </View>
+ //        </View>
+ //      </View>
