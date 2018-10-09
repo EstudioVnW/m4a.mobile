@@ -6,7 +6,7 @@ import Logo from '../components/logo';
 import Input from '../components/input';
 import Title from '../components/title';
 
-import { Slider } from 'react-native-elements';
+
 
 class AcaoSocialscreen extends React.Component {
 
@@ -38,11 +38,20 @@ class AcaoSocialscreen extends React.Component {
                     <View style={{width:210, borderTopWidth: 1, borderColor:'#FF7700'}}></View>
                   </View>
                   <Title marginLeft={55} marginTop={20} font={19} text='tell us your ZIP code:'/>
-                  <Input />
+                  <View style={styles.containerScrollInputs}>
+                    <View>
+                      <Title marginTop={20} marginLeft={20} font={16} text='Country'/>
+                      <Input width={130} placeholder='0'/>
+                    </View>
+                    <View style={{marginLeft:30}}>
+                      <Title marginTop={20} marginLeft={20} font={16} text='City'/>
+                      <Input width={130} placeholder='0'/>
+                    </View>
+                  </View>                    
                 </View>  
                 <View>
-                  <Title marginTop={20} marginLeft={45} font={26} text='Would you allow remote volunteering?'/>
-                  <Button width='82%' marginTop={20} value='Next' color='#FFF' backgroundColor='#FF7700'/>
+                  <Title width={200} marginTop={20} marginLeft={85} font={26} text='Allow remote volunteering'/>
+                  <Button width='82%' marginLeft={30} marginTop={20} value='Next' color='#FFF' backgroundColor='#FF7700'/>
                 </View> 
             </ScrollView>
             
@@ -79,7 +88,11 @@ const styles = StyleSheet.create({
     backgroundColor:'red',
     paddingTop: 10,
     marginLeft:50,
-  }
+  },
+  containerScrollInputs:{
+    width:'90%',
+    flexDirection:'row',
+  },
 });
 
 export default AcaoSocialscreen;

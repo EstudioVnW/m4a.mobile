@@ -46,7 +46,7 @@ class Input extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>{this.props.text}</Text>
-        <TextInput style={styles.input}
+        <TextInput style={[styles.input, {width:this.props.width}, {placeholder:this.props.placeholder}]}
           underlineColorAndroid='transparent'
           placeholder="Type here…"
           placeholderTextColor='rgba(255, 119, 0, 0.55)' 

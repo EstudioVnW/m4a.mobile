@@ -4,7 +4,7 @@ import { StyleSheet, View, Text  } from 'react-native';
 export default class Button extends React.Component{
     render(){
         return(
-            <View style={[styles.container,{backgroundColor:this.props.backgroundColor}, {marginTop:this.props.marginTop},{width:this.props.width} ]}>
+            <View style={[styles.container,{backgroundColor:this.props.backgroundColor}, {marginLeft:this.props.marginLeft},{marginTop:this.props.marginTop},{width:this.props.width} ]}>
                 <Text style={[styles.Button,{color:this.props.color}]}>{this.props.value}</Text>
             </View>
         );
